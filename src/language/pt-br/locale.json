@@ -1,0 +1,158 @@
+{
+  "experience": [
+    {
+      "description": "Configuração de hardware e manutenção. \n Gerenciamento de processos, coleta de dados, envio de documentos e atendimento ao público.",
+      "endDate": "12/2018",
+      "id": "462b9c4c-5c60-4b98-9e41-86c6544cee3c",
+      "position": "Estágio",
+      "startDate": "06/2018",
+      "title": "UnB - Universidade de Brasília"
+    },
+    {
+      "description": "Rede de computadores, VirtualBox. \n Envio de certificados virtuais. \n Gerenciamento de firewall e acesso remoto.",
+      "endDate": "08/2019",
+      "id": "a4840dec-4594-40fe-9085-c05598467051",
+      "position": "Estágio",
+      "startDate": "01/2019",
+      "title": "Anvisa - Agência Nacional de Vigilância Sanitária"
+    },
+    {
+      "description": "Desenvolvimento backend: Node.js, Postgres e API REST. \n Desenvolvimento de software: Java 8, Maven, Docker e Linux. \n Front-end: React e React Native. \n Monitoramento: Zabbix e Grafana. \n Análise de dados: Elasticsearch e PowerBI.",
+      "endDate": "10/2020",
+      "id": "8e22ea42-3043-4ec7-bfd8-4e965ed1dce5",
+      "position": "Desenvolvedor Web",
+      "startDate": "09/2019",
+      "title": "EBC - Empresa Brasil Comunicação"
+    },
+    {
+      "description": "Abordagem Mobile First. \n Frontend: Vue 2 - Vuex, SASS, Bootstrap, grid-layout. \n Consumo de API REST com o axios. \n Construção de API: NodeJs e Express. \n Testes de interface do usuário com Cypress e automação de tarefas com Gulp.",
+      "endDate": "07/2021",
+      "id": "c39e9f77-8bb6-4b02-a6a7-b7f2a1c81bf6",
+      "position": "Desenvolvedor Front-end",
+      "startDate": "11/2020",
+      "title": "STF - Supremo Tribunal Federal"
+    },
+    {
+      "description": "Método ágil: Scrum. \n Controle de versão de código no Azure. \n Framework: Angular 2+. \n Manutenção de projetos legados com: HTML, Sass, Javascript e Bootstrap. \n Habilidade com o Illustrator para criação de ícones SVG.",
+      "endDate": "02/2022",
+      "id": "986f1eaf-5403-4055-b0ef-c4ed980c7f0b",
+      "position": "Desenvolvedor Front-end",
+      "startDate": "07/2021",
+      "title": "Implanta Informática"
+    },
+    {
+      "description": "Métodos ágeis: Scrum/Kanban.\n Frameworks JS: ReactJS, NextJS.\n Teste de unidade: Jest.\n Habilidades com Redux e Redux Toolkit.\n Habilidades com Storybook.\n Prototipagem de telas com Figma.\n Task Runners (Vite, WebPack).\n Configuração de pipelines e artefatos no Azure.\n Bibliotecas de componentes (ex: Ant Design, Material Design).\n Design de experiência do usuário (UX/UI) e interfaces responsivas.\n Git-Flow e controle de versão de código.\n APIs REST, Context API.\n Internacionalização (L10n, i18n, nls).\n High Order Components.",
+      "endDate": "Atualmente",
+      "id": "42d5ce17-271f-4621-a5a7-489bfcafc680",
+      "position": "Engenheiro Front-end",
+      "startDate": "06/2021",
+      "title": "EEmovel - Inteligência Imobiliária"
+    },
+    {
+      "description": "Métodos ágeis: Scrum.\n Frameworks JS: Angular 13.\n Typescript, HTML e CSS/Sass.\n Acessibilidade WCAG.\n Habilidades com ngRX.\n Habilidades com ZeroHeight.\n Arquitetura Facade.\n Task runner: Webpack.\n Design de experiência do usuário (UX/UI) e interfaces responsivas.\n Git-Flow e controle de versão de código.\n APIs REST.\n High Order Components.\n Angular Material.\n Habilidades com After Effects e Premiere para vídeos demonstrativos de programação.",
+      "endDate": "Atualmente",
+      "id": "7f653461-c614-480e-8383-b803c24ad164",
+      "position": "Analista Front-end",
+      "startDate": "11/2021",
+      "title": "Ailos - Cooperativa Central"
+    }
+  ],
+  "projects": [
+    {
+      "id": "a1aee3bd-50e1-4c5a-886e-5dd63120061d",
+      "img": "/assets/image/applications/genshin-dmg-site.png",
+      "imgOrder": "",
+      "link": "https://genshin-dmg.vercel.app/",
+      "linkSpan": "Site",
+      "text": "Website criado para o jogo chamado Genshin Impact, este site foi feito para calcular o dano do seu personagem, evitando que os jogadores gastem dinheiro em personagens fracos.",
+      "title": "Genshin DMG"
+    },
+    {
+      "id": "4adadc71-9d13-4585-a06e-f2dd27baf5df",
+      "img": "/assets/image/applications/unip-hc.png",
+      "imgOrder": "order-2",
+      "link": "https://github.com/guilhermeprp/horas_c",
+      "linkSpan": "GitHub",
+      "text": "Aplicativo que ajuda os estudantes universitários a gerenciar suas horas complementares e tarefas.",
+      "title": "UnipHC"
+    },
+    {
+      "id": "2119301b-f804-4b6f-bd9e-d01288222a06",
+      "img": "/assets/image/applications/stf-site.png",
+      "imgOrder": "",
+      "link": "https://portal.stf.jus.br/",
+      "linkSpan": "Not in Production",
+      "text": "Nova página inicial do Supremo Tribunal Federal com Vue.js, Sass e método Mobile First. Utilizamos UI/UX para construir uma nova página com foco em acessibilidade.",
+      "title": "STF"
+    },
+    {
+      "id": "8e3de234-6ab5-419c-aaeb-3fd17016524d",
+      "img": "/assets/image/applications/agile-content-site.png",
+      "imgOrder": "order-2",
+      "link": "https://agile-content-challenge.vercel.app/",
+      "linkSpan": "Site",
+      "text": "Um desafio proposto pela Agile Content para construir um novo layout para serviços de streaming com React.Js, módulos Sass, MVC e abordagem Mobile First.",
+      "title": "AgileContent"
+    },
+    {
+      "id": "f24aaa4d-39f0-41dd-ac88-7dd2d8cf9249",
+      "img": "/assets/image/applications/show-off-site.png",
+      "imgOrder": "",
+      "link": "https://show-off-pokemon.vercel.app/",
+      "linkSpan": "Site",
+      "text": "Um projeto criado para estudos com React.js, utilizando a poke.api para criar todos os cards de Pokémon.",
+      "title": "ShowOff"
+    },
+    {
+      "id": "90b9ac04-c94a-4558-93e3-ef16cef081b1",
+      "img": "/assets/image/applications/ailos.png",
+      "imgOrder": "order-2",
+      "link": "https://ailos-challenge.vercel.app/",
+      "linkSpan": "Site",
+      "text": "Um desafio proposto pela Ailos para construir um consultor de CPF usando dados fictícios.",
+      "title": "AILOS"
+    }
+  ],
+  "skills": [
+    {
+      "id": "a7687430-e0b3-46f9-91c2-64b731fdea07",
+      "image": "/assets/image/skills/skills-curriculo-react.png",
+      "name": "React"
+    },
+    {
+      "id": "a1470982-dc43-11ec-9d64-0242ac120002",
+      "image": "/assets/image/skills/skills-curriculo-angular.png",
+      "name": "Angular"
+    },
+    {
+      "id": "0bd9b7e3-c29a-4064-b7da-58b93383d3f6",
+      "image": "/assets/image/skills/skills-curriculo-vue.png",
+      "name": "Vue"
+    },
+    {
+      "id": "98310a64-dc43-11ec-9d64-0242ac120002",
+      "image": "/assets/image/skills/skills-curriculo-typescript.png",
+      "name": "Typescript"
+    },
+    {
+      "id": "4261d404-8b8d-49b5-ad5f-c1abf3d7c54a",
+      "image": "/assets/image/skills/skills-curriculo-javascript.png",
+      "name": "JavaScript"
+    },
+    {
+      "id": "79684886-bb22-448a-8578-4277be835fc0",
+      "image": "/assets/image/skills/skills-curriculo-flutter.png",
+      "name": "Flutter"
+    },
+    {
+      "id": "727f24dc-aeba-4ae1-8145-e5c2266d7f6f",
+      "image": "/assets/image/skills/skills-curriculo-html.png",
+      "name": "Html5"
+    },
+    {
+      "id": "e2dbce0d-aa76-4053-bbbb-dfcf124a8cb9",
+      "image": "/assets/image/skills/skills-curriculo-sass.png",
+      "name": "Sass"
+    }
+  ]
+}
