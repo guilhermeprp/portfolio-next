@@ -17,12 +17,9 @@ export default function LocaleProvider({ children }: { children: React.ReactNode
 	const [translate, setTranslate] = useState({} as LocaleResources);
 
 	useEffect(() => {
-		try {
-			const language = getLanguage();
-			setTranslate(resources[language]);
-		} catch (error) {
-			setTranslate(resources["en-us"]);
-		}
+		getLanguage()
+			.then(language => setTranslate(resources[language]))
+			.catch(() => setTranslate(resources["en-us"]));
 	}, []);
 
 	const setLanguage = (language: Languages = "en-us") => {
@@ -37,12 +34,18 @@ export default function LocaleProvider({ children }: { children: React.ReactNode
 	);
 }
 
-function storeLanguage(language: Languages) {
-	if (getLanguage() === language) return;
+function storeLanguage(language: Languages): void {
 	LocalStorage.instance.setItem("language", language);
 }
 
-function getLanguage(): Languages {
-	const language = LocalStorage.instance.getItem("language") as Languages;
-	return language;
+function getLanguage(): Promise<Languages> {
+	return new Promise(async (resolve, reject) => {
+		const language = LocalStorage.instance.getItem("language") as Languages;
+		if (language) {
+			resolve(language);
+		}
+		else {
+			reject("Language not found.");
+		}
+	});
 }

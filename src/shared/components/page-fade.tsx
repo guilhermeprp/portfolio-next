@@ -1,18 +1,30 @@
 'use client'
-
-import React from 'react'
+import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
+import Lenis from '@studio-freight/lenis'
 
-export default function PageFade({ children }: { children: React.ReactNode }): JSX.Element {
+export default function MainFade({ children }: { children: React.ReactNode }): JSX.Element {
+
+	useEffect(() => {
+		const lenis = new Lenis()
+
+		const raf = (time: number) => {
+			lenis.raf(time)
+			requestAnimationFrame(raf)
+		}
+
+		requestAnimationFrame(raf);
+	}, [])
+
 	return (
-		<motion.div
+		<motion.main
 			animate={{ opacity: 1 }}
 			transition={{ duration: 1 }}
 			initial={{ opacity: 0 }}
 			exit={{ opacity: 0 }}
-			className="landing-body"
+			className={`relative flex column`}
 		>
 			{children}
-		</motion.div>
+		</motion.main>
 	)
 }

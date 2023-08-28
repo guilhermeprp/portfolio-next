@@ -1,0 +1,125 @@
+.projects-box-section {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.projects-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+.projects-img-box {
+	position: relative;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 0 0 100%;
+
+	aspect-ratio: 16/9;
+	margin: auto;
+	background-color: rgba(var(--red), 0.5);
+	border-radius: 5px;
+	outline: none;
+
+	overflow: hidden;
+}
+
+.projects-img-box:before {
+	content: "Visit";
+
+	position: absolute;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	aspect-ratio: 1/1;
+	width: 150%;
+	background-color: rgba(190, 6, 47, 0.5);
+	border-radius: 50%;
+	
+	font-size: 2.5rem;
+	font-weight: 900;
+	color: var(--white);
+	
+	scale: 0;
+	transform-origin: bottom;
+	transition: 0.4s scale;
+}
+
+.projects-img-box:hover:before {
+	scale: 1;
+	transform-origin: top;
+}
+
+
+.projects-img-box img {
+	height: 100%;
+	width: 100%;
+	object-fit: fill;
+}
+
+.projects-description-box {
+	flex: 3 3 300px;
+	margin: auto;
+}
+
+.projects-description-box h2 {
+	font-size: 2.5rem;
+}
+
+.projects-description-box p {
+	font-size: 1.3rem;
+	margin: 7px 0;
+}
+
+.projects-description-box .text-link {
+	font-weight: 700;
+	font-size: 1.5rem;
+	color: var(--red);
+
+	transition: 0.3s;
+}
+
+.projects-description-box .text-link:hover {
+	text-shadow: 0 0 4px var(--red);
+	text-decoration: none;
+	color: var(--pink);
+}
+
+.projects-description-box .text-link:hover svg {
+	transform: translateX(5px);
+}
+
+.projects-description-box .text-link svg {
+	transition: 0.3s;
+}
+
+.projects-description-box .text-link span {
+	margin-right: 5px;
+}
+
+.order-2 {
+	order: unset;
+}
+
+@media (width > 801px) {
+	.order-2 {
+		order: 2;
+	}
+
+	.text-link {
+		display: none;
+	}
+
+	.text-align-end {
+		text-align: right;
+	}
+
+	.projects-img-box {
+		flex: 0 0 400px;
+	}
+}

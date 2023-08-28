@@ -1,45 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  --pink: hsl(312, 99%, 50%);
-  --black: hsl(0, 0%, 10%);
+  --black: hsl(0, 0%, 2%);
   --bg-color-cards-light: hsl(240, 22%, 50%);
   --bg-color-cards: hsl(240, 22%, 20%);
-  --white: hsl(0, 0%, 100%);
-  --red: hsl(347, 93%, 50%);
-  --dark-red: hsl(347, 93%, 40%);
+  --white: hsl(266, 100%, 95%);
+  --red: hsl(345, 97%, 50%);
+  --dark-red: hsl(345, 97%, 40%);
 }
 
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
+}
 
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-decoration: none;
-
-  scroll-behavior: smooth;
-  scrollbar-width: 0;
+.hightlight {
+  color: var(--red);
 }
 
 body {
   margin: 0;
   background-color: var(--black);
-  overflow-x: hidden;
-  
+
+  color: var(--white);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-video {
-  z-index: 0;
-  
-  min-width: 1920px;
-  
-  object-fit: none;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  overflow-x: hidden;
 }
 
 /* scrollbar */

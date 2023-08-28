@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Navigation(): JSX.Element {
 	return (
 		<>
-			<nav>
+			<nav className="fixed top-7 right-7">
 				<ul>
 					<li>
 						<Link href="/">Landing</Link>
