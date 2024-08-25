@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { createContext, useEffect, useState } from "react";
 import { LocaleResources } from "./locale.type";

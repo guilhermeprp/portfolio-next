@@ -24,6 +24,7 @@ export default function Loading(): JSX.Element {
       transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: 0.3 }
     }
   }
+
   return (
     <motion.div variants={slideUp} initial="initial" exit="exit" className={style.loading_bg}>
       {dimension.width > 0 &&

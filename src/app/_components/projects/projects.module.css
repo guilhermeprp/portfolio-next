@@ -1,0 +1,143 @@
+.projects {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	padding-inline: 0;
+	margin-top: 300px;
+}
+
+.projects .body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	margin-bottom: 100px;
+	width: 100%;
+}
+
+.projects .modalContainer {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 3;
+
+	height: 300px;
+	width: 400px;
+	background-color: var(--white);
+	overflow: hidden;
+
+	pointer-events: none;
+}
+
+.projects .modalSlider {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.projects .modal {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding-inline: 32px;
+	height: 100%;
+	width: 100%;
+}
+
+.projects .modal img {
+	height: auto;
+}
+
+.projects .cursor,
+.projects .cursorLabel {
+	position: fixed;
+	z-index: 3;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: var(--dark-red);
+
+	font-size: 14px;
+	font-weight: 300;
+	color: var(--white);
+
+	pointer-events: none;
+}
+
+.projects .cursorLabel {
+	background-color: transparent;
+}
+
+
+/* Project Row */
+
+.project {
+	position: relative;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 100%;
+	padding: 25px 100px;
+	border-top: 1px solid rgb(201, 201, 201);
+
+	transition: all 0.2s;
+
+	cursor: pointer;
+}
+
+.project:last-of-type {
+	border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.project:hover::before {
+	scale: 1;
+}
+
+.project::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+
+	scale: 1 0;
+
+	backdrop-filter: invert(1) grayscale(1) contrast(1.2);
+	background-color: rgba(0, 0, 0, 0);
+
+	transition: all 0.4s;
+}
+
+
+.project h2 {
+	margin: 0px;
+
+	font-size: 70px;
+	font-weight: 900;
+
+	transition: all 0.4s;
+}
+
+.project p {
+	font-weight: 300;
+
+	transition: all 0.4s;
+}
+
+.project:hover h2 {
+	transform: translateX(-10px);
+}
+
+.project:hover p {
+	transform: translateX(10px);
+}

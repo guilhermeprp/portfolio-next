@@ -8,6 +8,7 @@ const roboto = Roboto({ weight: '400', subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Guilherme Pimenta',
   description: 'Guilherme Pimenta\'s personal website',
+  icons: "/assets/favicon.ico",
 }
 
 export default function RootLayout({
